@@ -79,13 +79,8 @@ npm run api-types
 
 Kareler `sonart_erp_cok_donemli_2.csv` data setiyle üretildi..
 
-```bash
-npm run build && npm run start          # ayrı bir terminalde
-node scripts/ekran-goruntuleri.mjs <dataset-id>
-```
 
-AI kareleri için analizin önbellekte olması gerekir — `/d/<id>/analiz`
-sayfasında bir kez üretmek yeterli, sonrası ücretsiz.
+
 
 ---
 
