@@ -1,16 +1,16 @@
 {
   "overview": {
     "dataset": {
-      "id": "625161c878c149ab",
+      "id": "3337d9f12d7945c6",
       "filename": "sonart_erp_bozuk_encoding.csv",
       "pack_key": "sonart-erp",
-      "pack_title": "Sonart Tekstil -- ERP Stok & Satis Raporu",
+      "pack_title": "Sonart Tekstil -- ERP Stok & Satış Raporu",
       "raw_row_count": 91,
       "clean_row_count": 90,
       "quarantined_row_count": 0,
       "health_score": 67,
       "encoding_detected": "utf-8-sig (mojibake onarildi)",
-      "created_at": "2026-07-29T22:00:18.450370"
+      "created_at": "2026-07-30T06:31:03.815111"
     },
     "periods": [
       "2026-01",
@@ -32,7 +32,7 @@
       },
       {
         "metric": "toplam_brut_kar_tl",
-        "label": "Brut Kar",
+        "label": "Brüt Kâr",
         "value": 66876.0,
         "unit": "TL",
         "entity": null,
@@ -40,7 +40,7 @@
       },
       {
         "metric": "ortalama_marj_yuzde",
-        "label": "Agirlikli Marj",
+        "label": "Ağırlıklı Marj",
         "value": 39.6429,
         "unit": "%",
         "entity": null,
@@ -48,7 +48,7 @@
       },
       {
         "metric": "toplam_stok_degeri_tl",
-        "label": "Stokta Bagli Sermaye",
+        "label": "Stokta Bağlı Sermaye",
         "value": 467786.0,
         "unit": "TL",
         "entity": null,
@@ -56,7 +56,7 @@
       },
       {
         "metric": "tukenen_urun_sayisi",
-        "label": "Stogu Tukenen Urun",
+        "label": "Stoğu Tükenen Ürün",
         "value": 2.0,
         "unit": "sayi",
         "entity": null,
@@ -129,7 +129,7 @@
     "top_risks": [
       {
         "code": "STOCKOUT",
-        "title": "Stok tukenmis -- satis tedarikle sinirli",
+        "title": "Stok tükenmiş -- satış tedarikle sınırlı",
         "severity": "kritik",
         "entity": "U005",
         "entity_label": "Barcelona Ayakkabılık Deri",
@@ -137,8 +137,8 @@
           "kategori": "Ayakkabılık",
           "depo": "Ana Depo"
         },
-        "narrative": "5 donemdir stok sifir. Bu donemlerin 4 tanesinde cikis girise kilitlenmis durumda -- yani satisi talep degil tedarik belirliyor. Tukenmeden onceki donemsel cikis 170 adetken simdi 77 adete dusmus; aradaki fark kacirilan satis.",
-        "recommendation": "Tedarik siparisini acil buyutun. Bu urun karli ve talep var; kisit tarafinizda. Tedarikci teslim suresini ve minimum siparis miktarini gozden gecirin.",
+        "narrative": "5 dönemdir stok sıfır. Bu dönemlerin 4 tanesinde çıkış girişe kilitlenmiş durumda -- yani satışı talep değil tedarik belirliyor. Tükenmeden önceki dönemsel çıkış 170 adetken simdi 77 adete düşmüş; aradaki fark kaçırılan satış.",
+        "recommendation": "Tedarik siparişini acil büyütün. Bu ürün kârlı ve talep var; kısıt tarafınızda. Tedarikçi teslim süresini ve minimum sipariş miktarını gözden geçirin.",
         "evidence": [
           {
             "metric": "son_stok",
@@ -150,7 +150,7 @@
           },
           {
             "metric": "sifir_stok_donem",
-            "label": "Stoksuz Donem Sayisi",
+            "label": "Stoksuz Dönem Sayısı",
             "value": 5.0,
             "unit": "sayi",
             "entity": "U005",
@@ -158,7 +158,7 @@
           },
           {
             "metric": "arz_kisitli_donem",
-            "label": "Arz Kisitli Donem",
+            "label": "Arz Kısıtlı Dönem",
             "value": 4.0,
             "unit": "sayi",
             "entity": "U005",
@@ -174,7 +174,7 @@
           },
           {
             "metric": "ilk_cikis",
-            "label": "Ilk Donem Cikis",
+            "label": "İlk Dönem Çıkış",
             "value": 170.0,
             "unit": "adet",
             "entity": "U005",
@@ -182,7 +182,7 @@
           },
           {
             "metric": "son_cikis",
-            "label": "Son Donem Cikis",
+            "label": "Son Dönem Çıkış",
             "value": 77.0,
             "unit": "adet",
             "entity": "U005",
@@ -247,7 +247,7 @@
           },
           {
             "metric": "toplam_brut_kar_tl",
-            "label": "Brut Kar",
+            "label": "Brüt Kâr",
             "value": 68251.0,
             "unit": "TL",
             "entity": null,
@@ -255,7 +255,7 @@
           },
           {
             "metric": "ortalama_marj_yuzde",
-            "label": "Agirlikli Marj",
+            "label": "Ağırlıklı Marj",
             "value": 39.1675,
             "unit": "%",
             "entity": null,
@@ -263,7 +263,7 @@
           },
           {
             "metric": "toplam_stok_degeri_tl",
-            "label": "Stokta Bagli Sermaye",
+            "label": "Stokta Bağlı Sermaye",
             "value": 479686.0,
             "unit": "TL",
             "entity": null,
@@ -271,7 +271,7 @@
           },
           {
             "metric": "tukenen_urun_sayisi",
-            "label": "Stogu Tukenen Urun",
+            "label": "Stoğu Tükenen Ürün",
             "value": 1.0,
             "unit": "sayi",
             "entity": null,
@@ -279,7 +279,7 @@
           },
           {
             "metric": "toplam_cikis",
-            "label": "Toplam Cikis",
+            "label": "Toplam Çıkış",
             "value": 4497.0,
             "unit": "adet",
             "entity": null,
@@ -287,7 +287,7 @@
           },
           {
             "metric": "toplam_giris",
-            "label": "Toplam Giris",
+            "label": "Toplam Giriş",
             "value": 4352.0,
             "unit": "adet",
             "entity": null,
@@ -305,7 +305,7 @@
         "movers_up": [
           {
             "metric": "cikis_miktar_change",
-            "label": "Cikis degisimi",
+            "label": "Çıkış degisimi",
             "value": 92.0,
             "unit": "adet",
             "entity": "U006",
@@ -313,7 +313,7 @@
           },
           {
             "metric": "cikis_miktar_change",
-            "label": "Cikis degisimi",
+            "label": "Çıkış degisimi",
             "value": 9.0,
             "unit": "adet",
             "entity": "U011",
@@ -323,7 +323,7 @@
         "movers_down": [
           {
             "metric": "cikis_miktar_change",
-            "label": "Cikis degisimi",
+            "label": "Çıkış degisimi",
             "value": -4.0,
             "unit": "adet",
             "entity": "U007",
@@ -331,7 +331,7 @@
           },
           {
             "metric": "cikis_miktar_change",
-            "label": "Cikis degisimi",
+            "label": "Çıkış degisimi",
             "value": -2.0,
             "unit": "adet",
             "entity": "U005",
@@ -339,7 +339,7 @@
           },
           {
             "metric": "cikis_miktar_change",
-            "label": "Cikis degisimi",
+            "label": "Çıkış degisimi",
             "value": -1.0,
             "unit": "adet",
             "entity": "U014",
@@ -413,7 +413,7 @@
       },
       {
         "name": "toplam_brut_kar_tl",
-        "label": "Brut Kar",
+        "label": "Brüt Kâr",
         "unit": "TL"
       },
       {
@@ -423,7 +423,7 @@
       },
       {
         "name": "ilk_stok",
-        "label": "Ilk Stok",
+        "label": "İlk Stok",
         "unit": "adet"
       }
     ],
@@ -519,22 +519,22 @@
     "issues": [
       {
         "code": "IMPUTATION_AMBIGUOUS",
-        "title": "Eksik deger iki yonden farkli hesaplaniyor",
+        "title": "Eksik değer iki yönden farklı hesaplanıyor",
         "severity": "yuksek",
         "action": "isaretlendi",
         "affected_rows": 1,
-        "detail": "Eksik satir, onceki donemden ileri dogru ve sonraki donemden geri dogru hesaplandiginda farkli sonuc veriyor. Bu, eksik satirin komsu donemlerle celistigini gosterir; kaynak sistemde bu kayit dogrulanmali.",
+        "detail": "Eksik satır, önceki dönemden ileri doğru ve sonraki dönemden geri doğru hesaplandığında farklı sonuç veriyor. Bu, eksik satirin komsu donemlerle çeliştiğini gosterir; kaynak sistemde bu kayıt doğrulanmalı.",
         "samples": [
           "U010 / 2026-04: ileri=5180 geri=5160"
         ]
       },
       {
         "code": "ENCODING_REPAIRED",
-        "title": "Karakter kodlamasi bozuklugu onarildi",
+        "title": "Karakter kodlaması bozukluğu onarıldı",
         "severity": "orta",
         "action": "onarildi",
         "affected_rows": 6,
-        "detail": "Dosya UTF-8 iken CP1252 olarak okunup tekrar kaydedilmis (mojibake). Turkce karakterler geri kazanildi.",
+        "detail": "Dosya UTF-8 iken CP1252 olarak okunup tekrar kaydedilmis (mojibake). Türkçe karakterler geri kazanıldı.",
         "samples": [
           "Marbella DÃ¶ÅŸemelik Deri -> Marbella Döşemelik Deri",
           "DÃ¶ÅŸemelik -> Döşemelik",
@@ -546,11 +546,11 @@
       },
       {
         "code": "DUPLICATE_EXACT",
-        "title": "Birebir ayni satirlar kaldirildi",
+        "title": "Birebir aynı satırlar kaldırıldı",
         "severity": "orta",
         "action": "silindi",
         "affected_rows": 1,
-        "detail": "1 satir tum kolonlariyla birebir tekrar ediyordu. ERP export'larinda sayfalama/birlestirme hatasinin tipik izi. Toplamlari sismemesi icin tekil hale getirildi.",
+        "detail": "1 satır tüm kolonlarıyla birebir tekrar ediyordu. ERP export'larinda sayfalama/birlestirme hatasinin tipik izi. Toplamları şişmemesi için tekil hale getirildi.",
         "samples": []
       }
     ]
@@ -580,7 +580,7 @@
     "risks": [
       {
         "code": "STOCKOUT",
-        "title": "Stok tukenmis -- satis tedarikle sinirli",
+        "title": "Stok tükenmiş -- satış tedarikle sınırlı",
         "severity": "kritik",
         "entity": "U005",
         "entity_label": "Barcelona Ayakkabılık Deri",
@@ -588,8 +588,8 @@
           "kategori": "Ayakkabılık",
           "depo": "Ana Depo"
         },
-        "narrative": "5 donemdir stok sifir. Bu donemlerin 4 tanesinde cikis girise kilitlenmis durumda -- yani satisi talep degil tedarik belirliyor. Tukenmeden onceki donemsel cikis 170 adetken simdi 77 adete dusmus; aradaki fark kacirilan satis.",
-        "recommendation": "Tedarik siparisini acil buyutun. Bu urun karli ve talep var; kisit tarafinizda. Tedarikci teslim suresini ve minimum siparis miktarini gozden gecirin.",
+        "narrative": "5 dönemdir stok sıfır. Bu dönemlerin 4 tanesinde çıkış girişe kilitlenmiş durumda -- yani satışı talep değil tedarik belirliyor. Tükenmeden önceki dönemsel çıkış 170 adetken simdi 77 adete düşmüş; aradaki fark kaçırılan satış.",
+        "recommendation": "Tedarik siparişini acil büyütün. Bu ürün kârlı ve talep var; kısıt tarafınızda. Tedarikçi teslim süresini ve minimum sipariş miktarını gözden geçirin.",
         "evidence": [
           {
             "metric": "son_stok",
@@ -601,7 +601,7 @@
           },
           {
             "metric": "sifir_stok_donem",
-            "label": "Stoksuz Donem Sayisi",
+            "label": "Stoksuz Dönem Sayısı",
             "value": 5.0,
             "unit": "sayi",
             "entity": "U005",
@@ -609,7 +609,7 @@
           },
           {
             "metric": "arz_kisitli_donem",
-            "label": "Arz Kisitli Donem",
+            "label": "Arz Kısıtlı Dönem",
             "value": 4.0,
             "unit": "sayi",
             "entity": "U005",
@@ -625,7 +625,7 @@
           },
           {
             "metric": "ilk_cikis",
-            "label": "Ilk Donem Cikis",
+            "label": "İlk Dönem Çıkış",
             "value": 170.0,
             "unit": "adet",
             "entity": "U005",
@@ -633,7 +633,7 @@
           },
           {
             "metric": "son_cikis",
-            "label": "Son Donem Cikis",
+            "label": "Son Dönem Çıkış",
             "value": 77.0,
             "unit": "adet",
             "entity": "U005",
@@ -646,7 +646,7 @@
     ]
   },
   "analysis_status": {
-    "dataset_id": "625161c878c149ab",
+    "dataset_id": "3337d9f12d7945c6",
     "ai_configured": true,
     "cached": false,
     "model": "claude-sonnet-5",
@@ -667,8 +667,8 @@
   "packs": [
     {
       "key": "sonart-erp",
-      "title": "Sonart Tekstil -- ERP Stok & Satis Raporu",
-      "description": "Logo Netsis'ten alinan donemsel stok hareket raporu. Urun bazinda giris/cikis, donem sonu stok, birim maliyet ve satis fiyati icerir.",
+      "title": "Sonart Tekstil -- ERP Stok & Satış Raporu",
+      "description": "Logo Netsis'ten alınan dönemsel stok hareket raporu. Ürün bazında giriş/çıkış, dönem sonu stok, birim maliyet ve satış fiyatı içerir.",
       "entity_key": "stok_kodu",
       "period_key": "donem",
       "dimensions": [
@@ -693,8 +693,8 @@
     },
     {
       "key": "zewnos-ads",
-      "title": "Zewnos -- Meta/Instagram Reklam Performansi",
-      "description": "Kampanya bazinda donemsel reklam performansi: harcama, gosterim, tiklama, frekans, donusum ve gelir.",
+      "title": "Zewnos -- Meta/Instagram Reklam Performansı",
+      "description": "Kampanya bazında dönemsel reklam performansı: harcama, gösterim, tıklama, frekans, dönüşüm ve gelir.",
       "entity_key": "kampanya_id",
       "period_key": "donem",
       "dimensions": [

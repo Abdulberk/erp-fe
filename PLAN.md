@@ -176,7 +176,14 @@ ekranında request id göstermek destek için faydalı.
 ## 5. Gerçek yanıt örnekleri
 
 > Aşağıdakiler canlı backend'den alınmış gerçek yanıtlardır. Alan adları
-> birebir budur.
+> birebir budur. Tam hâlleri [`docs/ornek-yanitlar.json`](docs/ornek-yanitlar.json)
+> dosyasında.
+>
+> Tek istisna: `analysis` bloğundaki **AI üretimi düzyazı** (`headline`,
+> `situation`, `delta_vs_prev`, aksiyon metinleri) daha eski bir koşudan
+> geliyor ve ASCII Türkçe görünüyor. Yapı ve alan adları güncel; canlı
+> backend bu metinleri artık düzgün Türkçe üretiyor. Etiketler
+> (`label`), risk başlıkları ve kalite maddeleri güncel koşudan.
 
 ### `GET /datasets/{id}/overview`
 
@@ -729,10 +736,12 @@ bir kare olabilir ama ana set light).
   anında geliyor. Geliştirme sırasında bir kez üretin, sonra ücretsiz.
 - **AI çağrısı para harcıyor** (~$0,22/analiz). Geliştirirken `?refresh=true`
   kullanmayın. `analysis/status` ile önce önbelleği kontrol edin.
-- **Backend etiketleri şu an ASCII Türkçe** (`"Brut Kar"`, `"Agirlikli Marj"`).
-  Backend tarafında düzeltilecek; frontend `label` alanını olduğu gibi
-  kullansın, düzeltme geldiğinde kendiliğinden düzelir. **Kendi etiket
-  sözlüğünüzü yazmayın.**
+- **Etiketler backend'den düzgün Türkçe geliyor** (`"Brüt Kâr"`, `"Ağırlıklı
+  Marj"`, `"Stoğu Tükenen Ürün"`). `label` alanını olduğu gibi ekrana basın.
+  **Kendi etiket sözlüğünüzü yazmayın** — metin tek kaynaktan, dataset
+  pack'inden geliyor; burada kopyalanan her etiket ikinci bir doğruluk
+  kaynağı yaratır ve backend değiştiğinde sessizce eskir. Aynı şey risk
+  başlıkları, kalite raporu maddeleri ve hata mesajları için de geçerli.
 - **Sayı formatı Türkçe**: binlik ayracı nokta, ondalık virgül.
   `Intl.NumberFormat("tr-TR")` kullanın.
 - **`null` değerler yaygın**: ilk dönemde `_delta` alanları, bazı risklerde
