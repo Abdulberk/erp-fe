@@ -77,9 +77,7 @@ npm run api-types
 
 ![Soru-cevap](screenshots/05-soru-cevap.png)
 
-Kareler `sonart_erp_cok_donemli_2.csv` veri setiyle, 1440px genişlikte ve
-light modda alındı. Tek komutla yeniden üretilebilir — kurulu Chrome/Edge'i
-headless sürüyor, ek bağımlılık yok:
+Kareler `sonart_erp_cok_donemli_2.csv` data setiyle üretildi..
 
 ```bash
 npm run build && npm run start          # ayrı bir terminalde
