@@ -1,0 +1,1216 @@
+{
+  "overview": {
+    "dataset": {
+      "id": "625161c878c149ab",
+      "filename": "sonart_erp_bozuk_encoding.csv",
+      "pack_key": "sonart-erp",
+      "pack_title": "Sonart Tekstil -- ERP Stok & Satis Raporu",
+      "raw_row_count": 91,
+      "clean_row_count": 90,
+      "quarantined_row_count": 0,
+      "health_score": 67,
+      "encoding_detected": "utf-8-sig (mojibake onarildi)",
+      "created_at": "2026-07-29T22:00:18.450370"
+    },
+    "periods": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06"
+    ],
+    "entity_count": 15,
+    "headline_metrics": [
+      {
+        "metric": "toplam_ciro_tl",
+        "label": "Toplam Ciro",
+        "value": 168696.0,
+        "unit": "TL",
+        "entity": null,
+        "period": "2026-06"
+      },
+      {
+        "metric": "toplam_brut_kar_tl",
+        "label": "Brut Kar",
+        "value": 66876.0,
+        "unit": "TL",
+        "entity": null,
+        "period": "2026-06"
+      },
+      {
+        "metric": "ortalama_marj_yuzde",
+        "label": "Agirlikli Marj",
+        "value": 39.6429,
+        "unit": "%",
+        "entity": null,
+        "period": "2026-06"
+      },
+      {
+        "metric": "toplam_stok_degeri_tl",
+        "label": "Stokta Bagli Sermaye",
+        "value": 467786.0,
+        "unit": "TL",
+        "entity": null,
+        "period": "2026-06"
+      },
+      {
+        "metric": "tukenen_urun_sayisi",
+        "label": "Stogu Tukenen Urun",
+        "value": 2.0,
+        "unit": "sayi",
+        "entity": null,
+        "period": "2026-06"
+      }
+    ],
+    "period_rows": [
+      {
+        "donem": "2026-01",
+        "toplam_ciro_tl": 174810.0,
+        "toplam_brut_kar_tl": 70014.0,
+        "ortalama_marj_yuzde": 40.051484468851896,
+        "toplam_stok_degeri_tl": 488633.0,
+        "tukenen_urun_sayisi": 0,
+        "toplam_cikis": 4467.0,
+        "toplam_giris": 4352.0,
+        "toplam_stok_adet": 26575.0,
+        "toplam_ciro_tl_delta": null,
+        "toplam_ciro_tl_delta_pct": null,
+        "toplam_brut_kar_tl_delta": null,
+        "toplam_brut_kar_tl_delta_pct": null,
+        "ortalama_marj_yuzde_delta": null,
+        "ortalama_marj_yuzde_delta_pct": null,
+        "toplam_stok_degeri_tl_delta": null,
+        "toplam_stok_degeri_tl_delta_pct": null,
+        "tukenen_urun_sayisi_delta": null,
+        "tukenen_urun_sayisi_delta_pct": null,
+        "toplam_cikis_delta": null,
+        "toplam_cikis_delta_pct": null,
+        "toplam_giris_delta": null,
+        "toplam_giris_delta_pct": null,
+        "toplam_stok_adet_delta": null,
+        "toplam_stok_adet_delta_pct": null
+      },
+      {
+        "donem": "2026-02",
+        "toplam_ciro_tl": 169794.0,
+        "toplam_brut_kar_tl": 67832.0,
+        "ortalama_marj_yuzde": 39.94958596887994,
+        "toplam_stok_degeri_tl": 485230.0,
+        "tukenen_urun_sayisi": 1,
+        "toplam_cikis": 4403.0,
+        "toplam_giris": 4352.0,
+        "toplam_stok_adet": 26524.0,
+        "toplam_ciro_tl_delta": -5016.0,
+        "toplam_ciro_tl_delta_pct": -2.8694010640123566,
+        "toplam_brut_kar_tl_delta": -2182.0,
+        "toplam_brut_kar_tl_delta_pct": -3.1165195532322105,
+        "ortalama_marj_yuzde_delta": -0.10189849997195921,
+        "ortalama_marj_yuzde_delta_pct": -0.25441878453021094,
+        "toplam_stok_degeri_tl_delta": -3403.0,
+        "toplam_stok_degeri_tl_delta_pct": -0.6964327010251048,
+        "tukenen_urun_sayisi_delta": 1,
+        "tukenen_urun_sayisi_delta_pct": null,
+        "toplam_cikis_delta": -64.0,
+        "toplam_cikis_delta_pct": -1.4327289008282964,
+        "toplam_giris_delta": 0.0,
+        "toplam_giris_delta_pct": 0.0,
+        "toplam_stok_adet_delta": -51.0,
+        "toplam_stok_adet_delta_pct": -0.19190968955785515
+      }
+    ],
+    "risk_counts_by_severity": {
+      "kritik": 3,
+      "yuksek": 4,
+      "orta": 8,
+      "dusuk": 1,
+      "bilgi": 2
+    },
+    "top_risks": [
+      {
+        "code": "STOCKOUT",
+        "title": "Stok tukenmis -- satis tedarikle sinirli",
+        "severity": "kritik",
+        "entity": "U005",
+        "entity_label": "Barcelona Ayakkabılık Deri",
+        "dimensions": {
+          "kategori": "Ayakkabılık",
+          "depo": "Ana Depo"
+        },
+        "narrative": "5 donemdir stok sifir. Bu donemlerin 4 tanesinde cikis girise kilitlenmis durumda -- yani satisi talep degil tedarik belirliyor. Tukenmeden onceki donemsel cikis 170 adetken simdi 77 adete dusmus; aradaki fark kacirilan satis.",
+        "recommendation": "Tedarik siparisini acil buyutun. Bu urun karli ve talep var; kisit tarafinizda. Tedarikci teslim suresini ve minimum siparis miktarini gozden gecirin.",
+        "evidence": [
+          {
+            "metric": "son_stok",
+            "label": "Son Stok",
+            "value": 0.0,
+            "unit": "adet",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "sifir_stok_donem",
+            "label": "Stoksuz Donem Sayisi",
+            "value": 5.0,
+            "unit": "sayi",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "arz_kisitli_donem",
+            "label": "Arz Kisitli Donem",
+            "value": 4.0,
+            "unit": "sayi",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "son_marj_yuzde",
+            "label": "Son Marj",
+            "value": 41.6667,
+            "unit": "%",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "ilk_cikis",
+            "label": "Ilk Donem Cikis",
+            "value": 170.0,
+            "unit": "adet",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "son_cikis",
+            "label": "Son Donem Cikis",
+            "value": 77.0,
+            "unit": "adet",
+            "entity": "U005",
+            "period": null
+          }
+        ],
+        "financial_impact_tl": 33480.0,
+        "first_seen_period": "2026-02"
+      }
+    ]
+  },
+  "periods": {
+    "periods": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06"
+    ],
+    "rows": [
+      {
+        "donem": "2026-01",
+        "toplam_ciro_tl": 174810.0,
+        "toplam_brut_kar_tl": 70014.0,
+        "ortalama_marj_yuzde": 40.051484468851896,
+        "toplam_stok_degeri_tl": 488633.0,
+        "tukenen_urun_sayisi": 0,
+        "toplam_cikis": 4467.0,
+        "toplam_giris": 4352.0,
+        "toplam_stok_adet": 26575.0,
+        "toplam_ciro_tl_delta": null,
+        "toplam_ciro_tl_delta_pct": null,
+        "toplam_brut_kar_tl_delta": null,
+        "toplam_brut_kar_tl_delta_pct": null,
+        "ortalama_marj_yuzde_delta": null,
+        "ortalama_marj_yuzde_delta_pct": null,
+        "toplam_stok_degeri_tl_delta": null,
+        "toplam_stok_degeri_tl_delta_pct": null,
+        "tukenen_urun_sayisi_delta": null,
+        "tukenen_urun_sayisi_delta_pct": null,
+        "toplam_cikis_delta": null,
+        "toplam_cikis_delta_pct": null,
+        "toplam_giris_delta": null,
+        "toplam_giris_delta_pct": null,
+        "toplam_stok_adet_delta": null,
+        "toplam_stok_adet_delta_pct": null
+      }
+    ],
+    "deltas": [
+      {
+        "period": "2026-03",
+        "previous_period": "2026-02",
+        "metrics": [
+          {
+            "metric": "toplam_ciro_tl",
+            "label": "Toplam Ciro",
+            "value": 174254.0,
+            "unit": "TL",
+            "entity": null,
+            "period": null
+          },
+          {
+            "metric": "toplam_brut_kar_tl",
+            "label": "Brut Kar",
+            "value": 68251.0,
+            "unit": "TL",
+            "entity": null,
+            "period": null
+          },
+          {
+            "metric": "ortalama_marj_yuzde",
+            "label": "Agirlikli Marj",
+            "value": 39.1675,
+            "unit": "%",
+            "entity": null,
+            "period": null
+          },
+          {
+            "metric": "toplam_stok_degeri_tl",
+            "label": "Stokta Bagli Sermaye",
+            "value": 479686.0,
+            "unit": "TL",
+            "entity": null,
+            "period": null
+          },
+          {
+            "metric": "tukenen_urun_sayisi",
+            "label": "Stogu Tukenen Urun",
+            "value": 1.0,
+            "unit": "sayi",
+            "entity": null,
+            "period": null
+          },
+          {
+            "metric": "toplam_cikis",
+            "label": "Toplam Cikis",
+            "value": 4497.0,
+            "unit": "adet",
+            "entity": null,
+            "period": null
+          },
+          {
+            "metric": "toplam_giris",
+            "label": "Toplam Giris",
+            "value": 4352.0,
+            "unit": "adet",
+            "entity": null,
+            "period": null
+          },
+          {
+            "metric": "toplam_stok_adet",
+            "label": "Toplam Stok",
+            "value": 26379.0,
+            "unit": "adet",
+            "entity": null,
+            "period": null
+          }
+        ],
+        "movers_up": [
+          {
+            "metric": "cikis_miktar_change",
+            "label": "Cikis degisimi",
+            "value": 92.0,
+            "unit": "adet",
+            "entity": "U006",
+            "period": "2026-03"
+          },
+          {
+            "metric": "cikis_miktar_change",
+            "label": "Cikis degisimi",
+            "value": 9.0,
+            "unit": "adet",
+            "entity": "U011",
+            "period": "2026-03"
+          }
+        ],
+        "movers_down": [
+          {
+            "metric": "cikis_miktar_change",
+            "label": "Cikis degisimi",
+            "value": -4.0,
+            "unit": "adet",
+            "entity": "U007",
+            "period": "2026-03"
+          },
+          {
+            "metric": "cikis_miktar_change",
+            "label": "Cikis degisimi",
+            "value": -2.0,
+            "unit": "adet",
+            "entity": "U005",
+            "period": "2026-03"
+          },
+          {
+            "metric": "cikis_miktar_change",
+            "label": "Cikis degisimi",
+            "value": -1.0,
+            "unit": "adet",
+            "entity": "U014",
+            "period": "2026-03"
+          }
+        ],
+        "new_risks": [
+          "COST_SHOCK",
+          "MARGIN_EROSION"
+        ],
+        "resolved_risks": []
+      }
+    ],
+    "dimension_rows": [
+      {
+        "dimension_value": "Ayakkabılık",
+        "donem": "2026-01",
+        "toplam_ciro_tl": 44560.0,
+        "toplam_brut_kar_tl": 17160.0,
+        "ortalama_marj_yuzde": 38.50987432675045,
+        "toplam_stok_degeri_tl": 120124.0,
+        "toplam_cikis": 1190.0,
+        "urun_sayisi": 3,
+        "dimension": "kategori"
+      },
+      {
+        "dimension_value": "Ayakkabılık",
+        "donem": "2026-02",
+        "toplam_ciro_tl": 38008.0,
+        "toplam_brut_kar_tl": 14430.0,
+        "ortalama_marj_yuzde": 37.965691433382446,
+        "toplam_stok_degeri_tl": 118280.0,
+        "toplam_cikis": 1099.0,
+        "urun_sayisi": 3,
+        "dimension": "kategori"
+      }
+    ]
+  },
+  "entities": {
+    "entity_key": "stok_kodu",
+    "entity_label_key": "urun_adi",
+    "dimensions": [
+      "kategori",
+      "depo"
+    ],
+    "columns": [
+      {
+        "name": "stok_kodu",
+        "label": "Kod",
+        "unit": ""
+      },
+      {
+        "name": "urun_adi",
+        "label": "Ad",
+        "unit": ""
+      },
+      {
+        "name": "kategori",
+        "label": "Kategori",
+        "unit": ""
+      },
+      {
+        "name": "depo",
+        "label": "Depo",
+        "unit": ""
+      },
+      {
+        "name": "toplam_ciro_tl",
+        "label": "Toplam Ciro",
+        "unit": "TL"
+      },
+      {
+        "name": "toplam_brut_kar_tl",
+        "label": "Brut Kar",
+        "unit": "TL"
+      },
+      {
+        "name": "son_stok",
+        "label": "Son Stok",
+        "unit": "adet"
+      },
+      {
+        "name": "ilk_stok",
+        "label": "Ilk Stok",
+        "unit": "adet"
+      }
+    ],
+    "columns_total": 27,
+    "rows": [
+      {
+        "stok_kodu": "U001",
+        "urun_adi": "Milano Giyimlik Deri",
+        "periods_count": 6,
+        "first_period": "2026-01",
+        "last_period": "2026-06",
+        "kategori": "Giyimlik",
+        "depo": "Ana Depo",
+        "trend_first": 400.0,
+        "trend_last": 400.0,
+        "trend_mean": 400.0,
+        "trend_last3": 400.0,
+        "toplam_ciro_tl": 108000.0,
+        "toplam_brut_kar_tl": 40800.0,
+        "son_stok": 3280.0,
+        "ilk_stok": 3380.0,
+        "son_kapama_ay": 8.2,
+        "son_marj_yuzde": 37.77777777777778,
+        "ilk_marj_yuzde": 37.77777777777778,
+        "marj_degisim_puan": 0.0,
+        "son_birim_maliyet": 28.0,
+        "maliyet_degisim_yuzde": 0.0,
+        "son_birim_satis": 45.0,
+        "son_stok_degeri_tl": 91840.0,
+        "sifir_stok_donem": 0,
+        "ilk_sifir_donem": null,
+        "arz_kisitli_donem": 0,
+        "ilk_cikis": 400.0,
+        "son_cikis": 400.0,
+        "ortalama_cikis": 400.0,
+        "ilk3_cikis_ort": 400.0,
+        "son3_cikis_ort": 400.0,
+        "zirve_cikis": 400.0,
+        "zirve_donem": "2026-01",
+        "net_akis_toplam": -120.0,
+        "stok_trend_step": -20.0,
+        "cikis_trend_step": 0.0,
+        "maliyet_sok_donem": null,
+        "marj_dusus_donem": null,
+        "kritik_kapama_donem": null,
+        "olu_stok_donem": null,
+        "yavas_donem": "2026-01",
+        "talep_patlama_donem": null,
+        "trend_step": 0.0,
+        "trend_delta_pct": 0.0
+      }
+    ],
+    "series_rows": [
+      {
+        "stok_kodu": "U001",
+        "urun_adi": "Milano Giyimlik Deri",
+        "kategori": "Giyimlik",
+        "depo": "Ana Depo",
+        "donem": "2026-01",
+        "giris_miktar": 380.0,
+        "cikis_miktar": 400.0,
+        "donem_sonu_stok": 3380.0,
+        "birim_maliyet_tl": 28.0,
+        "birim_satis_tl": 45.0,
+        "giris_miktar__imputed": false,
+        "cikis_miktar__imputed": false,
+        "donem_sonu_stok__imputed": false,
+        "ciro_tl": 18000.0,
+        "satis_maliyeti_tl": 11200.0,
+        "brut_kar_tl": 6800.0,
+        "marj_yuzde": 37.77777777777778,
+        "stok_degeri_tl": 94640.0,
+        "net_akis": -20.0,
+        "arz_kisitli": 0,
+        "onceki_stok": null,
+        "cikis_ort3": 400.0,
+        "cikis_mom_yuzde": null,
+        "maliyet_mom_yuzde": null,
+        "marj_delta_puan": null,
+        "kapama_ay": 8.45,
+        "mutabakat_farki": null
+      }
+    ],
+    "series_rows_total": 90
+  },
+  "quality": {
+    "raw_row_count": 91,
+    "clean_row_count": 90,
+    "quarantined_row_count": 0,
+    "encoding_detected": "utf-8-sig (mojibake onarildi)",
+    "encoding_repaired": true,
+    "health_score": 67,
+    "issues": [
+      {
+        "code": "IMPUTATION_AMBIGUOUS",
+        "title": "Eksik deger iki yonden farkli hesaplaniyor",
+        "severity": "yuksek",
+        "action": "isaretlendi",
+        "affected_rows": 1,
+        "detail": "Eksik satir, onceki donemden ileri dogru ve sonraki donemden geri dogru hesaplandiginda farkli sonuc veriyor. Bu, eksik satirin komsu donemlerle celistigini gosterir; kaynak sistemde bu kayit dogrulanmali.",
+        "samples": [
+          "U010 / 2026-04: ileri=5180 geri=5160"
+        ]
+      },
+      {
+        "code": "ENCODING_REPAIRED",
+        "title": "Karakter kodlamasi bozuklugu onarildi",
+        "severity": "orta",
+        "action": "onarildi",
+        "affected_rows": 6,
+        "detail": "Dosya UTF-8 iken CP1252 olarak okunup tekrar kaydedilmis (mojibake). Turkce karakterler geri kazanildi.",
+        "samples": [
+          "Marbella DÃ¶ÅŸemelik Deri -> Marbella Döşemelik Deri",
+          "DÃ¶ÅŸemelik -> Döşemelik",
+          "Barcelona AyakkabÄ±lÄ±k Deri -> Barcelona Ayakkabılık Deri",
+          "AyakkabÄ±lÄ±k -> Ayakkabılık",
+          "Verona DÃ¶ÅŸemelik Deri -> Verona Döşemelik Deri",
+          "Cortina Ã‡antalÄ±k Deri -> Cortina Çantalık Deri"
+        ]
+      },
+      {
+        "code": "DUPLICATE_EXACT",
+        "title": "Birebir ayni satirlar kaldirildi",
+        "severity": "orta",
+        "action": "silindi",
+        "affected_rows": 1,
+        "detail": "1 satir tum kolonlariyla birebir tekrar ediyordu. ERP export'larinda sayfalama/birlestirme hatasinin tipik izi. Toplamlari sismemesi icin tekil hale getirildi.",
+        "samples": []
+      }
+    ]
+  },
+  "risks": {
+    "total": 18,
+    "total_financial_impact_tl": 229773.33,
+    "by_severity": {
+      "kritik": 3,
+      "yuksek": 4,
+      "orta": 8,
+      "dusuk": 1,
+      "bilgi": 2
+    },
+    "by_code": {
+      "STOCKOUT": 2,
+      "MARGIN_EROSION": 1,
+      "DEAD_STOCK": 1,
+      "STOCKOUT_IMMINENT": 2,
+      "COST_SHOCK": 1,
+      "SLOW_MOVER": 3,
+      "SILENT_ACCUMULATION": 4,
+      "DEMAND_SURGE": 1,
+      "DYING_SKU": 1,
+      "SEASONAL_PEAK": 2
+    },
+    "risks": [
+      {
+        "code": "STOCKOUT",
+        "title": "Stok tukenmis -- satis tedarikle sinirli",
+        "severity": "kritik",
+        "entity": "U005",
+        "entity_label": "Barcelona Ayakkabılık Deri",
+        "dimensions": {
+          "kategori": "Ayakkabılık",
+          "depo": "Ana Depo"
+        },
+        "narrative": "5 donemdir stok sifir. Bu donemlerin 4 tanesinde cikis girise kilitlenmis durumda -- yani satisi talep degil tedarik belirliyor. Tukenmeden onceki donemsel cikis 170 adetken simdi 77 adete dusmus; aradaki fark kacirilan satis.",
+        "recommendation": "Tedarik siparisini acil buyutun. Bu urun karli ve talep var; kisit tarafinizda. Tedarikci teslim suresini ve minimum siparis miktarini gozden gecirin.",
+        "evidence": [
+          {
+            "metric": "son_stok",
+            "label": "Son Stok",
+            "value": 0.0,
+            "unit": "adet",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "sifir_stok_donem",
+            "label": "Stoksuz Donem Sayisi",
+            "value": 5.0,
+            "unit": "sayi",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "arz_kisitli_donem",
+            "label": "Arz Kisitli Donem",
+            "value": 4.0,
+            "unit": "sayi",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "son_marj_yuzde",
+            "label": "Son Marj",
+            "value": 41.6667,
+            "unit": "%",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "ilk_cikis",
+            "label": "Ilk Donem Cikis",
+            "value": 170.0,
+            "unit": "adet",
+            "entity": "U005",
+            "period": null
+          },
+          {
+            "metric": "son_cikis",
+            "label": "Son Donem Cikis",
+            "value": 77.0,
+            "unit": "adet",
+            "entity": "U005",
+            "period": null
+          }
+        ],
+        "financial_impact_tl": 33480.0,
+        "first_seen_period": "2026-02"
+      }
+    ]
+  },
+  "analysis_status": {
+    "dataset_id": "625161c878c149ab",
+    "ai_configured": true,
+    "cached": false,
+    "model": "claude-sonnet-5",
+    "effort": "medium",
+    "estimated_calls": 7,
+    "detail": {
+      "periods": [
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06"
+      ],
+      "risk_count": 18
+    }
+  },
+  "packs": [
+    {
+      "key": "sonart-erp",
+      "title": "Sonart Tekstil -- ERP Stok & Satis Raporu",
+      "description": "Logo Netsis'ten alinan donemsel stok hareket raporu. Urun bazinda giris/cikis, donem sonu stok, birim maliyet ve satis fiyati icerir.",
+      "entity_key": "stok_kodu",
+      "period_key": "donem",
+      "dimensions": [
+        "kategori",
+        "depo"
+      ],
+      "required_columns": [
+        "stok_kodu",
+        "urun_adi",
+        "kategori",
+        "depo",
+        "donem",
+        "giris_miktar",
+        "cikis_miktar",
+        "donem_sonu_stok",
+        "birim_maliyet_tl",
+        "birim_satis_tl"
+      ],
+      "risk_rule_count": 10,
+      "metric_count": 14,
+      "sample_file": "sonart_erp_cok_donemli.csv"
+    },
+    {
+      "key": "zewnos-ads",
+      "title": "Zewnos -- Meta/Instagram Reklam Performansi",
+      "description": "Kampanya bazinda donemsel reklam performansi: harcama, gosterim, tiklama, frekans, donusum ve gelir.",
+      "entity_key": "kampanya_id",
+      "period_key": "donem",
+      "dimensions": [
+        "urun_kategorisi",
+        "platform"
+      ],
+      "required_columns": [
+        "kampanya_id",
+        "kampanya_adi",
+        "platform",
+        "urun_kategorisi",
+        "donem",
+        "harcama_tl",
+        "gosterim",
+        "tiklama",
+        "frekans",
+        "donusum",
+        "gelir_tl"
+      ],
+      "risk_rule_count": 7,
+      "metric_count": 12,
+      "sample_file": "zewnos_meta_ads_cok_donemli.csv"
+    }
+  ],
+  "analysis": {
+    "telemetry": {
+      "call_count": 7,
+      "input_tokens": 14366,
+      "output_tokens": 21357,
+      "cache_write_tokens": 26760,
+      "cache_read_tokens": 66480,
+      "cache_hit_calls": 5,
+      "total_cost_usd": 0.3225,
+      "duration_ms": 260482
+    },
+    "grounding": {
+      "total_evidence": 118,
+      "verified_evidence": 116,
+      "grounding_ratio": 0.9831
+    },
+    "summary": {
+      "headline": "Sonart Tekstil portfoyu Ocak-Haziran doneminde ciroda dalgali seyrederken iki urunde (U005 Barcelona, U003 Havana) tedarik kaynakli stoksuzluk kalicilasti ve toplam stok degeri 488.633 TL'den 467.786 TL'ye geriledi.",
+      "situation": "Alti ay boyunca ortalama marj %40,05'ten %39,64'e geriledi, toplam stok degeri 488.633 TL'den 467.786 TL'ye dustu ve tukenen urun sayisi 0'dan 2'ye cikti. U005 Barcelona 5 donemdir, U003 Havana 3 donemdir stok sifir ve bu urunlerde cikis artik talep degil tedarik tarafindan belirleniyor. U007 Cortina'da tek seferlik maliyet sicramasi (%21,67) marji %42,86'dan %30,48'e dusurdu ve kalici bir marj erozyonuna donustu.",
+      "period_narrative": "Ocak ayi saglikli bir baslangic goruntusu sundu (ciro 174.810 TL, marj %40,05) ancak U007 Cortina'nin kapama suresi zaten 1 ayin altindaydi ve U004 Marbella'da asiri stok birikmisti. Subat'ta U005 Barcelona'nin stogu sifira dustu ve portfoy ilk kez bir tukenen urunle kapandi. Mart'ta ikinci kirilma noktasi yasandi: U007'de ani maliyet sicramasi marji COST_SHOCK seviyesine tasidi ve U003 Havana erimeye basladi. Nisan'da U003 de resmen stoksuz kaldi (tukenen urun sayisi 2'ye cikti) ve seri boyunca ilk kez toplam giris hacmi bir onceki doneme gore net artis gosterdi. Mayis'ta U011 Valencia'da mevsimsel talep zirvesi (117 adet cikis) yasanirken U013 Firenze yeni bir stoksuzluk sinyali verdi. Haziran'da mevsimsel tepe sonrasi cikis hacmi geriledi (4.541'den 4.422 adete), ciro 176.208 TL'den 168.696 TL'ye dustu ve U005 ile U003'teki arz kisitli durum kalicilasarak donem kapaninca da cozulmedi.",
+      "top_risks": [
+        {
+          "entity": "U005",
+          "title": "Barcelona Ayakkabılık Deri'de 5 donemdir suren stockout",
+          "why_it_matters": "Karli ve talebi olan bir urunde satisi tedarik belirliyor; tahmini etki 33.480 TL kacirilan ciro.",
+          "evidence": [
+            {
+              "metric": "sifir_stok_donem",
+              "value": 5.0,
+              "unit": "sayi",
+              "entity": "U005",
+              "period": null
+            },
+            {
+              "metric": "arz_kisitli_donem",
+              "value": 4.0,
+              "unit": "sayi",
+              "entity": "U005",
+              "period": null
+            },
+            {
+              "metric": "ilk_cikis",
+              "value": 170.0,
+              "unit": "adet",
+              "entity": "U005",
+              "period": null
+            },
+            {
+              "metric": "son_cikis",
+              "value": 77.0,
+              "unit": "adet",
+              "entity": "U005",
+              "period": null
+            },
+            {
+              "metric": "son_marj_yuzde",
+              "value": 41.67,
+              "unit": "%",
+              "entity": "U005",
+              "period": null
+            }
+          ]
+        },
+        {
+          "entity": "U003",
+          "title": "Havana Giyimlik Deri'de 3 donemdir suren stockout",
+          "why_it_matters": "Ikinci karli urunde de tedarik kisiti satisi kesiyor, tahmini etki 10.680 TL.",
+          "evidence": [
+            {
+              "metric": "sifir_stok_donem",
+              "value": 3.0,
+              "unit": "sayi",
+              "entity": "U003",
+              "period": null
+            },
+            {
+              "metric": "arz_kisitli_donem",
+              "value": 2.0,
+              "unit": "sayi",
+              "entity": "U003",
+              "period": null
+            },
+            {
+              "metric": "ilk_cikis",
+              "value": 80.0,
+              "unit": "adet",
+              "entity": "U003",
+              "period": null
+            },
+            {
+              "metric": "son_cikis",
+              "value": 40.0,
+              "unit": "adet",
+              "entity": "U003",
+              "period": null
+            }
+          ]
+        },
+        {
+          "entity": "U007",
+          "title": "Cortina Çantalık Deri'de marj erozyonu ve yakin stockout",
+          "why_it_matters": "Maliyet artisi fiyata yansitilmadi, marj 12,4 puan geriledi ve stok da kritik seviyede (0,08 ay).",
+          "evidence": [
+            {
+              "metric": "marj_degisim_puan",
+              "value": -12.38,
+              "unit": "%",
+              "entity": "U007",
+              "period": null
+            },
+            {
+              "metric": "maliyet_degisim_yuzde",
+              "value": 21.67,
+              "unit": "%",
+              "entity": "U007",
+              "period": null
+            },
+            {
+              "metric": "son_kapama_ay",
+              "value": 0.08,
+              "unit": "ay",
+              "entity": "U007",
+              "period": null
+            }
+          ]
+        },
+        {
+          "entity": "U013",
+          "title": "Firenze Ayakkabılık Deri'de yaklasan stockout",
+          "why_it_matters": "Stok yalnizca 1,23 ay yetiyor; tahmini etki 12.740 TL.",
+          "evidence": [
+            {
+              "metric": "son_kapama_ay",
+              "value": 1.23,
+              "unit": "ay",
+              "entity": "U013",
+              "period": null
+            },
+            {
+              "metric": "son3_cikis_ort",
+              "value": 130.0,
+              "unit": "adet",
+              "entity": "U013",
+              "period": null
+            }
+          ]
+        }
+      ],
+      "opportunities": [
+        {
+          "entity": "U011",
+          "title": "Valencia Giyimlik Deri'de mevsimsel talep sicramasi",
+          "why_it_matters": "Cikis ilk 3 ayda ortalama 28,3 adetken son 3 ayda 81 adete cikti; stok bu hiza hazir degilse firsat kacirilir.",
+          "evidence": [
+            {
+              "metric": "ilk3_cikis_ort",
+              "value": 28.33,
+              "unit": "adet",
+              "entity": "U011",
+              "period": null
+            },
+            {
+              "metric": "son3_cikis_ort",
+              "value": 81.0,
+              "unit": "adet",
+              "entity": "U011",
+              "period": null
+            },
+            {
+              "metric": "zirve_cikis",
+              "value": 117.0,
+              "unit": "adet",
+              "entity": "U011",
+              "period": null
+            }
+          ]
+        },
+        {
+          "entity": "U006",
+          "title": "Verona Döşemelik Deri'de tekrarlanan mevsimsel zirve",
+          "why_it_matters": "2026-04'te 356 adetlik zirve yapti; gelecek yil ayni donem icin onceden planlama firsati var.",
+          "evidence": [
+            {
+              "metric": "zirve_cikis",
+              "value": 356.0,
+              "unit": "adet",
+              "entity": "U006",
+              "period": null
+            },
+            {
+              "metric": "ortalama_cikis",
+              "value": 273.67,
+              "unit": "adet",
+              "entity": "U006",
+              "period": null
+            }
+          ]
+        }
+      ],
+      "strategic_actions": [
+        {
+          "priority": "kritik",
+          "title": "Ayakkabılık kategorisinde tedarikci portfoyunu ve minimum siparis anlasmalarini yonetim seviyesinde gozden gecirin",
+          "rationale": "Ayakkabılık kategorisinde iki farkli urunde (Barcelona ve Firenze) tedarik kaynakli stoksuzluk riski var; kategori genelinde ciro Ocak'taki 44.560 TL'den Haziran'da 37.864 TL'ye gerilemis durumda, tek urun bazli mudahaleler yeterli olmuyor.",
+          "evidence": [
+            {
+              "metric": "toplam_ciro_tl",
+              "value": 44560.0,
+              "unit": "TL",
+              "entity": null,
+              "period": "2026-01"
+            },
+            {
+              "metric": "toplam_ciro_tl",
+              "value": 37864.0,
+              "unit": "TL",
+              "entity": null,
+              "period": "2026-06"
+            },
+            {
+              "metric": "sifir_stok_donem",
+              "value": 5.0,
+              "unit": "sayi",
+              "entity": "U005",
+              "period": null
+            },
+            {
+              "metric": "son_kapama_ay",
+              "value": 1.23,
+              "unit": "ay",
+              "entity": "U013",
+              "period": null
+            }
+          ],
+          "owner": "satinalma",
+          "horizon": "bu_ay",
+          "expected_impact_tl": 46220.0
+        },
+        {
+          "priority": "kritik",
+          "title": "Cortina Çantalık Deri icin fiyatlandirma politikasini finans ve satis ortak karariyla yeniden belirleyin",
+          "rationale": "Maliyet artisi (%21,67) fiyata yansitilmadigi icin marj kalici olarak dusuk seyrediyor; bu urun tek basina degil, benzer maliyet soklarina karsi genel fiyat guncelleme politikasi gerektiriyor.",
+          "evidence": [
+            {
+              "metric": "maliyet_degisim_yuzde",
+              "value": 21.67,
+              "unit": "%",
+              "entity": "U007",
+              "period": null
+            },
+            {
+              "metric": "marj_degisim_puan",
+              "value": -12.38,
+              "unit": "%",
+              "entity": "U007",
+              "period": null
+            },
+            {
+              "metric": "son_birim_maliyet",
+              "value": 146.0,
+              "unit": "TL",
+              "entity": "U007",
+              "period": null
+            }
+          ],
+          "owner": "finans",
+          "horizon": "bu_ceyrek",
+          "expected_impact_tl": 572.0
+        },
+        {
+          "priority": "yuksek",
+          "title": "Yavas donen urunlerde (Milano, Sevilla, Napoli) siparis miktar/frekans politikasini bu ceyrek yeniden tasarlayin",
+          "rationale": "Uc urunde toplam yaklasik 235.000 TL sermaye 7-8 ay kapama suresiyle depoda bekliyor; bu tekil siparis duzeltmesinden cok satinalma politikasi sorunu.",
+          "evidence": [
+            {
+              "metric": "son_stok_degeri_tl",
+              "value": 91840.0,
+              "unit": "TL",
+              "entity": "U001",
+              "period": null
+            },
+            {
+              "metric": "son_stok_degeri_tl",
+              "value": 101640.0,
+              "unit": "TL",
+              "entity": "U009",
+              "period": null
+            },
+            {
+              "metric": "son_stok_degeri_tl",
+              "value": 41600.0,
+              "unit": "TL",
+              "entity": "U010",
+              "period": null
+            },
+            {
+              "metric": "son_kapama_ay",
+              "value": 8.2,
+              "unit": "ay",
+              "entity": "U001",
+              "period": null
+            }
+          ],
+          "owner": "satinalma",
+          "horizon": "bu_ceyrek",
+          "expected_impact_tl": 234460.0
+        },
+        {
+          "priority": "orta",
+          "title": "Giyimlik kategorisinde sessiz stok birikimini izleyecek periyodik kontrol mekanizmasi kurun",
+          "rationale": "U002, U008 gibi urunlerde giris cikisi surekli asiyor ve trend yukari; tek donemde alarm vermiyor ama birikim devam ederse dead-stock riskine donusur.",
+          "evidence": [
+            {
+              "metric": "stok_trend_step",
+              "value": 40.0,
+              "unit": "adet",
+              "entity": "U002",
+              "period": null
+            },
+            {
+              "metric": "net_akis_toplam",
+              "value": 240.0,
+              "unit": "adet",
+              "entity": "U002",
+              "period": null
+            },
+            {
+              "metric": "stok_trend_step",
+              "value": 10.0,
+              "unit": "adet",
+              "entity": "U008",
+              "period": null
+            }
+          ],
+          "owner": "uretim",
+          "horizon": "bu_ceyrek",
+          "expected_impact_tl": 6840.0
+        },
+        {
+          "priority": "orta",
+          "title": "Mevsimsel zirve gorulen urunler (Verona, Valencia) icin gelecek yil tedarik takvimini simdiden planlayin",
+          "rationale": "Ikisi de ayni yil icinde belirgin zirve yapti; onceden planlama olmadan gelecek sezonda ya stoksuzluk ya da fazla stok riski tekrarlanir.",
+          "evidence": [
+            {
+              "metric": "zirve_cikis",
+              "value": 356.0,
+              "unit": "adet",
+              "entity": "U006",
+              "period": null
+            },
+            {
+              "metric": "zirve_cikis",
+              "value": 117.0,
+              "unit": "adet",
+              "entity": "U011",
+              "period": null
+            }
+          ],
+          "owner": "uretim",
+          "horizon": "bu_ceyrek",
+          "expected_impact_tl": null
+        }
+      ]
+    },
+    "periods": [
+      {
+        "period": "2026-01",
+        "headline": "Portföy sağlıklı görünüyor ama iki uçta risk birikiyor: U007 Cortina'da stok tükenmek üzere, U004 Marbella'da ise fazla stok sermaye kilitliyor.",
+        "delta_vs_prev": "Bu ilk analiz dönemi; karşılaştırma yapılacak önceki dönem yok. Başlangıç görüntüsü: toplam ciro 174.810 TL, ortalama marj %40.05, stokta bağlı sermaye 488.633 TL, 26.575 adet toplam stok. Bu dönemde henüz hiçbir ürün tükenmemiş (tukenen_urun_sayisi=0) ama U007 Cortina Çantalık Deri kapama süresi yalnızca 1.14 ay ile şimdiden kritik seviyede, U004 Marbella Döşemelik Deri ise 14.42 ay kapama süresiyle aşırı stoklu başlıyor.",
+        "dominant_dynamics": [
+          "stok_riski",
+          "tedarik_kisiti"
+        ],
+        "actions": [
+          {
+            "priority": "kritik",
+            "title": "U007 Cortina Çantalık Deri için acil tedarik siparişi açın",
+            "rationale": "Bu dönem sonu stok yalnızca 40 adet ve kapama süresi 1.14 ay; mevcut çıkış hızıyla önümüzdeki dönem içinde tükenme riski var. Ürün marjı %42.86 ile portföyün en karlı kalemlerinden, kaybedilecek satış maliyeti yüksek.",
+            "evidence": [
+              {
+                "metric": "kapama_ay",
+                "value": 1.14,
+                "unit": "ay",
+                "entity": "U007",
+                "period": "2026-01"
+              },
+              {
+                "metric": "donem_sonu_stok",
+                "value": 40.0,
+                "unit": "adet",
+                "entity": "U007",
+                "period": "2026-01"
+              },
+              {
+                "metric": "marj_yuzde",
+                "value": 42.86,
+                "unit": "%",
+                "entity": "U007",
+                "period": "2026-01"
+              }
+            ],
+            "owner": "satinalma",
+            "horizon": "bu_hafta",
+            "expected_impact_tl": 5040.0
+          },
+          {
+            "priority": "yuksek",
+            "title": "U004 Marbella Döşemelik Deri için yeni alımı durdurun ve satış kanalı arayın",
+            "rationale": "Depoda 4.255 adet stok var ve mevcut çıkış hızıyla 14.42 ay yetiyor; bu, portföydeki en uzun kapama süresi ve ciddi sermaye bağlıyor.",
+            "evidence": [
+              {
+                "metric": "kapama_ay",
+                "value": 14.42,
+                "unit": "ay",
+                "entity": "U004",
+                "period": "2026-01"
+              },
+              {
+                "metric": "donem_sonu_stok",
+                "value": 4255.0,
+                "unit": "adet",
+                "entity": "U004",
+                "period": "2026-01"
+              },
+              {
+                "metric": "birim_maliyet_tl",
+                "value": 9.0,
+                "unit": "TL",
+                "entity": "U004",
+                "period": "2026-01"
+              }
+            ],
+            "owner": "satinalma",
+            "horizon": "bu_ay",
+            "expected_impact_tl": 36270.0
+          },
+          {
+            "priority": "orta",
+            "title": "U001 Milano ve U009 Sevilla için sipariş miktarını küçültüp frekansı artırın",
+            "rationale": "İki üründe de kapama süresi 8 ayı aşıyor (Milano 8.45 ay, Sevilla 8.38 ay); bu, ortalamanın üzerinde bağlı sermaye anlamına geliyor ve dönem henüz kritik değil ama izlenmeli.",
+            "evidence": [
+              {
+                "metric": "kapama_ay",
+                "value": 8.45,
+                "unit": "ay",
+                "entity": "U001",
+                "period": "2026-01"
+              },
+              {
+                "metric": "kapama_ay",
+                "value": 8.38,
+                "unit": "ay",
+                "entity": "U009",
+                "period": "2026-01"
+              }
+            ],
+            "owner": "satinalma",
+            "horizon": "bu_ay",
+            "expected_impact_tl": null
+          }
+        ],
+        "watch_items": [
+          "U010 Napoli Çantalık Deri kapama süresi 7.53 ay ile ortalamanın üzerinde, henüz aksiyon gerektirmiyor ama izlenmeli.",
+          "U003 Havana Giyimlik Deri bu dönemde kapama süresi 1.38 ay ile düşük; ileride tükenme riskine dönüşebilir.",
+          "U005 Barcelona Ayakkabılık Deri bu dönem sonu stoğu yalnızca 2 adet; önümüzdeki dönemde tükenme riski var."
+        ]
+      }
+    ],
+    "failed_periods": []
+  },
+  "error_example": {
+    "status": 422,
+    "body": {
+      "code": "schema_mismatch",
+      "message": "Zorunlu kolonlar eksik: urun_adi, kategori, depo, giris_miktar, cikis_miktar, donem_sonu_stok, birim_maliyet_tl, birim_satis_tl",
+      "details": {
+        "missing_columns": [
+          "urun_adi",
+          "kategori",
+          "depo",
+          "giris_miktar",
+          "cikis_miktar",
+          "donem_sonu_stok",
+          "birim_maliyet_tl",
+          "birim_satis_tl"
+        ],
+        "found_columns": [
+          "stok_kodu",
+          "donem"
+        ],
+        "expected_pack": "sonart-erp"
+      }
+    }
+  }
+}
