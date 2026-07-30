@@ -11,7 +11,7 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Servis ayakta mi */
+        /** Servis ayakta mı */
         get: operations["health_api_v1_health_get"];
         put?: never;
         post?: never;
@@ -28,7 +28,7 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Bagimliliklar hazir mi */
+        /** Bağımlılıklar hazır mı */
         get: operations["ready_api_v1_health_ready_get"];
         put?: never;
         post?: never;
@@ -46,8 +46,8 @@ export interface paths {
             cookie?: never;
         };
         /**
-         * Tanimli rapor tipleri
-         * @description Her kayit bir 'dataset pack'. Yeni bir rapor tipi eklemek icin motora, endpoint'lere veya AI katmanina dokunmak gerekmez -- yalnizca yeni bir pack tanimlanip buraya kaydedilir.
+         * Tanımlı rapor tipleri
+         * @description Her kayıt bir 'dataset pack'. Yeni bir rapor tipi eklemek için motora, endpoint'lere veya AI katmanına dokunmak gerekmez -- yalnızca yeni bir pack tanımlanıp buraya kaydedilir.
          */
         get: operations["packs_api_v1_packs_get"];
         put?: never;
@@ -65,10 +65,10 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Yuklenmis veri setleri */
+        /** Yüklenmiş veri setleri */
         get: operations["list_datasets_api_v1_datasets_get"];
         put?: never;
-        /** CSV yukle ve isle */
+        /** CSV yükle ve işle */
         post: operations["upload_dataset_api_v1_datasets_post"];
         delete?: never;
         options?: never;
@@ -83,7 +83,7 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Veri seti ozeti */
+        /** Veri seti özeti */
         get: operations["get_dataset_api_v1_datasets__dataset_id__get"];
         put?: never;
         post?: never;
@@ -103,7 +103,7 @@ export interface paths {
         };
         /**
          * Veri kalitesi raporu
-         * @description Tespit edilen her sorun; agirligi, kac satiri etkiledigi ve **ne yapildigi** (onarildi / turetildi / silindi / karantina / isaretlendi) ile birlikte.
+         * @description Tespit edilen her sorun; ağırlığı, kaç satırı etkilediği ve **ne yapıldığı** (onarildi / turetildi / silindi / karantina / isaretlendi) ile birlikte.
          */
         get: operations["get_quality_api_v1_datasets__dataset_id__quality_get"];
         put?: never;
@@ -121,7 +121,7 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Dashboard ozeti */
+        /** Dashboard özeti */
         get: operations["get_overview_api_v1_datasets__dataset_id__overview_get"];
         put?: never;
         post?: never;
@@ -138,7 +138,7 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Donemsel trend ve degisim verisi */
+        /** Dönemsel trend ve değişim verisi */
         get: operations["get_periods_api_v1_datasets__dataset_id__periods_get"];
         put?: never;
         post?: never;
@@ -155,7 +155,7 @@ export interface paths {
             path?: never;
             cookie?: never;
         };
-        /** Kayit bazinda ozet ve zaman serisi */
+        /** Kayıt bazında özet ve zaman serisi */
         get: operations["get_entities_api_v1_datasets__dataset_id__entities_get"];
         put?: never;
         post?: never;
@@ -190,8 +190,8 @@ export interface paths {
             cookie?: never;
         };
         /**
-         * Analiz hazir mi, kac cagri gerekecek
-         * @description Frontend'in 'analiz uret' butonunu maliyet uyarisiyla gostermesi icin. Onbellekte varsa cagri yapilmayacagini bildirir.
+         * Analiz hazır mı, kaç çağrı gerekecek
+         * @description Frontend'in 'analiz üret' butonunu maliyet uyarısıyla göstermesi için. Önbellekte varsa çağrı yapılmayacağını bildirir.
          */
         get: operations["analysis_status_api_v1_datasets__dataset_id__analysis_status_get"];
         put?: never;
@@ -212,8 +212,8 @@ export interface paths {
         get?: never;
         put?: never;
         /**
-         * Donemsel analiz + yonetici ozeti uret
-         * @description Her donem icin paralel bir AI cagrisi, ardindan tek bir sentez cagrisi. Sonuc onbellege yazilir; ayni veri seti icin tekrar cagrildiginda AI'a gidilmez. `refresh=true` ile yeniden uretilebilir.
+         * Dönemsel analiz + yönetici özeti üret
+         * @description Her dönem için paralel bir AI çağrısı, ardından tek bir sentez çağrısı. Sonuç önbelleğe yazılır; aynı veri seti için tekrar çağrıldığında AI'a gidilmez. `refresh=true` ile yeniden üretilebilir.
          */
         post: operations["create_analysis_api_v1_datasets__dataset_id__analysis_post"];
         delete?: never;
@@ -232,8 +232,8 @@ export interface paths {
         get?: never;
         put?: never;
         /**
-         * Veri uzerinde serbest soru-cevap
-         * @description Model SQL yazmaz: hesaplanmis tablolari yorumlar. Boylece 'AI sayi hesaplamaz' kurali soru-cevapta da korunur ve her yanit kanit tasir.
+         * Veri üzerinde serbest soru-cevap
+         * @description Model SQL yazmaz: hesaplanmış tabloları yorumlar. Böylece 'AI sayı hesaplamaz' kuralı soru-cevapta da korunur ve her yanıt kanıt taşır.
          */
         post: operations["ask_api_v1_datasets__dataset_id__ask_post"];
         delete?: never;
@@ -250,8 +250,8 @@ export interface paths {
             cookie?: never;
         };
         /**
-         * Paylasilabilir yonetici raporu (PDF)
-         * @description KPI'lar, donemsel trend, risk sicili ve veri kalitesi notlari. AI analizi onbellekte varsa yonetici ozeti ve doneme ozgu aksiyonlar da eklenir; yoksa rapor yalnizca hesaplanmis verilerle uretilir ve AI cagrisi yapilmaz.
+         * Paylaşılabilir yönetici raporu (PDF)
+         * @description KPI'lar, dönemsel trend, risk sicili ve veri kalitesi notları. AI analizi önbellekte varsa yönetici özeti ve döneme özgü aksiyonlar da eklenir; yoksa rapor yalnızca hesaplanmış verilerle üretilir ve AI çağrısı yapılmaz.
          */
         get: operations["download_report_api_v1_datasets__dataset_id__report_pdf_get"];
         put?: never;
@@ -317,7 +317,7 @@ export interface components {
             model: string;
             /**
              * Cached
-             * @description True ise sonuc onbellekten geldi; yeni AI cagrisi yapilmadi.
+             * @description True ise sonuç önbellekten geldi; yeni AI çağrısı yapılmadı.
              */
             cached: boolean;
             /** Cached At */
@@ -353,7 +353,7 @@ export interface components {
         AskRequest: {
             /**
              * Question
-             * @example Marji en hizli daralan urun hangisi?
+             * @example Marjı en hızlı daralan ürün hangisi?
              */
             question: string;
         };
@@ -377,12 +377,12 @@ export interface components {
             /**
              * File
              * Format: binary
-             * @description Islenecek CSV dosyasi
+             * @description İşlenecek CSV dosyası
              */
             file: string;
             /**
              * Pack
-             * @description Rapor tipi (or. 'sonart-erp'). Bos birakilirsa basliklardan tespit edilir.
+             * @description Rapor tipi (ör. 'sonart-erp'). Boş bırakılırsa başlıklardan tespit edilir.
              */
             pack?: string | null;
         };
@@ -422,7 +422,7 @@ export interface components {
             dimensions: string[];
             /**
              * Columns
-             * @description Kolon adi/etiket/birim -- tablo basliklarini frontend'e tasir.
+             * @description Kolon adı/etiket/birim -- tablo başlıklarını frontend'e taşır.
              */
             columns: {
                 [key: string]: string;
@@ -431,9 +431,26 @@ export interface components {
             rows: Record<string, never>[];
             /**
              * Series Rows
-             * @description (kayit, donem) bazinda uzun tablo -- kayit detay grafikleri icin.
+             * @description (kayıt, dönem) bazında uzun tablo -- kayıt detay grafikleri için.
              */
             series_rows: Record<string, never>[];
+        };
+        /**
+         * ErrorResponse
+         * @description Tum hatalarin ortak govdesi.
+         *
+         *     Istemci `code` alanina gore dallanir; mesaj metni degisse bile kirilmaz.
+         */
+        ErrorResponse: {
+            /**
+             * Code
+             * @example schema_mismatch
+             */
+            code: string;
+            /** Message */
+            message: string;
+            /** Details */
+            details?: Record<string, never>;
         };
         /**
          * Evidence
@@ -516,11 +533,6 @@ export interface components {
             /** Issues */
             issues?: Record<string, never>[];
         };
-        /** HTTPValidationError */
-        HTTPValidationError: {
-            /** Detail */
-            detail?: components["schemas"]["ValidationError"][];
-        };
         /** MetricOut */
         MetricOut: {
             /** Metric */
@@ -547,7 +559,7 @@ export interface components {
             headline_metrics: components["schemas"]["MetricOut"][];
             /**
              * Period Rows
-             * @description Donem bazinda portfoy ozeti -- trend grafiklerinin kaynagi.
+             * @description Dönem bazında portföy özeti -- trend grafiklerinin kaynağı.
              */
             period_rows: Record<string, never>[];
             /** Risk Counts By Severity */
@@ -625,7 +637,7 @@ export interface components {
             rows: Record<string, never>[];
             /**
              * Deltas
-             * @description Her donemin bir oncekine gore degisimi ve o donemde acilan riskler.
+             * @description Her dönemin bir öncekine göre değişimi ve o dönemde açılan riskler.
              */
             deltas: Record<string, never>[];
             /** Dimension Rows */
@@ -800,15 +812,6 @@ export interface components {
             /** Risk Count */
             risk_count: number;
         };
-        /** ValidationError */
-        ValidationError: {
-            /** Location */
-            loc: (string | number)[];
-            /** Message */
-            msg: string;
-            /** Error Type */
-            type: string;
-        };
     };
     responses: never;
     parameters: never;
@@ -838,6 +841,42 @@ export interface operations {
                     };
                 };
             };
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
         };
     };
     ready_api_v1_health_ready_get: {
@@ -856,6 +895,42 @@ export interface operations {
                 };
                 content: {
                     "application/json": Record<string, never>;
+                };
+            };
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -878,6 +953,42 @@ export interface operations {
                     "application/json": components["schemas"]["PackOut"][];
                 };
             };
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
         };
     };
     list_datasets_api_v1_datasets_get: {
@@ -896,6 +1007,51 @@ export interface operations {
                 };
                 content: {
                     "application/json": components["schemas"]["DatasetSummary"][];
+                };
+            };
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
+            422: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -922,13 +1078,49 @@ export interface operations {
                     "application/json": components["schemas"]["UploadResponse"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -953,13 +1145,49 @@ export interface operations {
                     "application/json": components["schemas"]["DatasetSummary"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -982,13 +1210,49 @@ export interface operations {
                 };
                 content?: never;
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1013,13 +1277,49 @@ export interface operations {
                     "application/json": components["schemas"]["QualityReportOut"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1027,7 +1327,7 @@ export interface operations {
     get_overview_api_v1_datasets__dataset_id__overview_get: {
         parameters: {
             query?: {
-                /** @description Donulecek risk sayisi */
+                /** @description Dönülecek risk sayısı */
                 top?: number;
             };
             header?: never;
@@ -1047,13 +1347,49 @@ export interface operations {
                     "application/json": components["schemas"]["OverviewResponse"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1078,13 +1414,49 @@ export interface operations {
                     "application/json": components["schemas"]["PeriodsResponse"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1092,7 +1464,7 @@ export interface operations {
     get_entities_api_v1_datasets__dataset_id__entities_get: {
         parameters: {
             query?: {
-                /** @description (kayit, donem) uzun tablosunu da dondur */
+                /** @description (kayıt, dönem) uzun tablosunu da döndür */
                 include_series?: boolean;
             };
             header?: never;
@@ -1112,13 +1484,49 @@ export interface operations {
                     "application/json": components["schemas"]["EntitiesResponse"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1126,9 +1534,9 @@ export interface operations {
     get_risks_api_v1_datasets__dataset_id__risks_get: {
         parameters: {
             query?: {
-                /** @description Agirliga gore filtre, or. 'kritik' */
+                /** @description Ağırlığa göre filtre, ör. 'kritik' */
                 severity?: string | null;
-                /** @description Yalnizca bu donemde acilan riskler */
+                /** @description Yalnızca bu dönemde açılan riskler */
                 period?: string | null;
             };
             header?: never;
@@ -1148,13 +1556,49 @@ export interface operations {
                     "application/json": components["schemas"]["RisksResponse"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya boyutu izin verilen sınırı aşıyor */
+            413: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1179,13 +1623,67 @@ export interface operations {
                     "application/json": components["schemas"]["AnalysisStatusResponse"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI servisi istek limitini aştı */
+            429: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI servisinden geçerli yanıt alınamadı */
+            502: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI yapılandırılmamış (ANTHROPIC_API_KEY yok) */
+            503: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1193,7 +1691,7 @@ export interface operations {
     create_analysis_api_v1_datasets__dataset_id__analysis_post: {
         parameters: {
             query?: {
-                /** @description Onbellegi yok say ve yeniden uret */
+                /** @description Önbelleği yok say ve yeniden üret */
                 refresh?: boolean;
             };
             header?: never;
@@ -1213,13 +1711,67 @@ export interface operations {
                     "application/json": components["schemas"]["AnalysisResponse"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI servisi istek limitini aştı */
+            429: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI servisinden geçerli yanıt alınamadı */
+            502: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI yapılandırılmamış (ANTHROPIC_API_KEY yok) */
+            503: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1248,13 +1800,67 @@ export interface operations {
                     "application/json": components["schemas"]["AskResponse"];
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI servisi istek limitini aştı */
+            429: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI servisinden geçerli yanıt alınamadı */
+            502: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description AI yapılandırılmamış (ANTHROPIC_API_KEY yok) */
+            503: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
@@ -1262,7 +1868,7 @@ export interface operations {
     download_report_api_v1_datasets__dataset_id__report_pdf_get: {
         parameters: {
             query?: {
-                /** @description Onbellekteki AI analizini rapora dahil et (yeni cagri yapmaz) */
+                /** @description Önbellekteki AI analizini rapora dahil et (yeni çağrı yapmaz) */
                 include_ai?: boolean;
             };
             header?: never;
@@ -1282,13 +1888,40 @@ export interface operations {
                     "application/pdf": unknown;
                 };
             };
-            /** @description Validation Error */
+            /** @description İstek geçersiz (bilinmeyen rapor tipi, hatalı parametre) */
+            400: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Kayıt bulunamadı */
+            404: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Dosya işlenemedi ya da doğrulama hatası */
             422: {
                 headers: {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["HTTPValidationError"];
+                    "application/json": components["schemas"]["ErrorResponse"];
+                };
+            };
+            /** @description Beklenmeyen hata */
+            500: {
+                headers: {
+                    [name: string]: unknown;
+                };
+                content: {
+                    "application/json": components["schemas"]["ErrorResponse"];
                 };
             };
         };
