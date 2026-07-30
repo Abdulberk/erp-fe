@@ -67,7 +67,18 @@ npm run api-types
 
 ## Ekran görüntüleri
 
-`PLAN.md` bölüm 13'teki beş kare tek komutla üretiliyor. Kurulu Chrome/Edge'i
+![Dashboard](screenshots/01-dashboard.png)
+
+![Veri kalitesi](screenshots/02-veri-kalitesi.png)
+
+![Risk sicili](screenshots/03-risk-sicili.png)
+
+![Dönemsel AI analizi](screenshots/04-donemsel-analiz.png)
+
+![Soru-cevap](screenshots/05-soru-cevap.png)
+
+Kareler `sonart_erp_cok_donemli_2.csv` veri setiyle, 1440px genişlikte ve
+light modda alındı. Tek komutla yeniden üretilebilir — kurulu Chrome/Edge'i
 headless sürüyor, ek bağımlılık yok:
 
 ```bash
@@ -75,11 +86,8 @@ npm run build && npm run start          # ayrı bir terminalde
 node scripts/ekran-goruntuleri.mjs <dataset-id>
 ```
 
-Çıktı `screenshots/` altına düşer (1440px, light mod). Kareler bu depoda
-sürüm kontrolüne girmiyor; teslim edilen kopyaları backend deposunda
-`docs/screenshots/` altında ve README'sinde gömülü. AI kareleri için
-analizin önbellekte olması gerekir — `/d/<id>/analiz` sayfasında bir kez
-üretmek yeterli, sonrası ücretsiz.
+AI kareleri için analizin önbellekte olması gerekir — `/d/<id>/analiz`
+sayfasında bir kez üretmek yeterli, sonrası ücretsiz.
 
 ---
 
