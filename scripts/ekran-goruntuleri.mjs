@@ -45,29 +45,52 @@ if (!browser) {
   process.exit(1);
 }
 
-/** Her kare: rota, dosya adı ve kadraja girmesi gereken şeyi açan adım. */
+/**
+ * Her kare: rota, dosya adı, kadraja girmesi gerekeni açan adım.
+ *
+ * `readyFor` bekleme koşulu — sabit süre yerine buna bakılıyor. AI uçları
+ * onbellekte varsa anında, yoksa saniyeler sürüyor; sabit `sleep` ile kare
+ * yaniti gelmeden cekiliyordu.
+ */
 const SHOTS = [
-  { file: "01-dashboard.png", path: `/d/${ID}`, prepare: null },
-  { file: "02-veri-kalitesi.png", path: `/d/${ID}/kalite`, prepare: null },
+  { file: "01-dashboard.png", path: `/d/${ID}` },
+  { file: "02-veri-kalitesi.png", path: `/d/${ID}/kalite` },
   {
     file: "03-risk-sicili.png",
     path: `/d/${ID}/riskler`,
     // İlk risk zaten açık geliyor; kanıt pill'leri kadrajda.
-    prepare: null,
   },
   {
     file: "04-donemsel-analiz.png",
     path: `/d/${ID}/analiz`,
+    // Önbellekte varsa sayfa kendi POST'unu atıp özeti basıyor.
+    readyBeforePrepare: `document.body.innerText.includes("YÖNETİCİ ÖZETİ")`,
     prepare: `[...document.querySelectorAll('button[aria-expanded="false"]')].slice(0,3).forEach(b => b.click())`,
-    wait: 6000,
   },
   {
     file: "05-soru-cevap.png",
     path: `/d/${ID}/sor`,
     prepare: `[...document.querySelectorAll('button')].find(b => b.textContent.includes('Marjı en hızlı'))?.click()`,
-    wait: 9000,
+    // Yanıt kartı gelene kadar bekle; soru önbellekte değilse gerçek çağrı.
+    readyFor: `!!document.querySelector("article")`,
   },
 ];
+
+/** Koşul sağlanana kadar bekler; sağlanmazsa uyarıp devam eder. */
+async function waitUntil(page, expression, label, timeoutMs = 90_000) {
+  if (!expression) return true;
+  const deadline = Date.now() + timeoutMs;
+  while (Date.now() < deadline) {
+    const { result } = await page.send("Runtime.evaluate", {
+      expression,
+      returnByValue: true,
+    });
+    if (result.value === true) return true;
+    await sleep(500);
+  }
+  console.warn(`  ! ${label}: koşul ${timeoutMs / 1000} sn içinde sağlanmadı`);
+  return false;
+}
 
 const proc = spawn(
   browser,
@@ -148,8 +171,11 @@ for (const shot of SHOTS) {
   await page.send("Page.navigate", { url: BASE + shot.path });
   await sleep(shot.wait ?? 3000);
 
+  await waitUntil(page, shot.readyBeforePrepare, shot.file);
+
   if (shot.prepare) {
     await page.send("Runtime.evaluate", { expression: shot.prepare, awaitPromise: true });
+    await waitUntil(page, shot.readyFor, shot.file);
     await sleep(1200);
   }
 
